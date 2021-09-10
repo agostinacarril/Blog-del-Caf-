@@ -1,0 +1,143 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Gothic A1', sans-serif;
+	line-height: 2;
+}
+.contenedor {
+	width: 90%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 48px;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 40px;
+	line-height: 1.2;
+}
+h3 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+h4 {
+   font-size: 28px;
+   line-height: 1.2;
+}
+img {
+	max-width: 100%;
+}
+.sinmargen {
+	margin: 0;
+}
+.sinpadding {
+	padding: 0;
+}
+.centrar-texto {
+	text-align: center;
+}
+
+/* HEADER */
+.header {
+	background-image: url(banner.jpg);
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.headertexto {
+	text-align: center;
+	color: white;
+	margin-top: 50px;
+}
+
+.barra {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.logo {
+  color: white;
+}
+.logonombre {
+ font-weight: normal;
+}
+.logobold {
+font-weight: bolder;
+}
+.navegacionenlace {
+	color: white;
+	font-size: 18px;
+}
+@media (min-width: 750px) {.navegacion {
+	display: flex;
+	gap:20px;
+}
+}
+@media (max-width: 750px) {
+	.navegacion {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		margin-top: 0;
+	}
+	.navegacionenlace {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		margin-top: 0px;
+	}
+	.barra {
+		display: grid;
+		grid-template-columns: 1fr
+	}
+	.header {
+		height: auto;
+	}
+	.headertexto {
+		padding: 1px 0;
+	}
+	
+
+}
+.footer {
+	background-color: black;
+	color: white;
+	padding: 0;
+
+	margin-top:40px;
+
+}
+.contenedor h3 {
+	font-weight: bolder;
+}
+
+.cursos {
+    padding: 30px 0;
+    
+}
+.cursos {
+    border-bottom: 1px solid gray;
+    padding-bottom: 35px;
+    text-align: left;
+}
+.cursos:last-of-type {
+    border-bottom: none;
+
+}
+@media (min-width: 768px) {.cursos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px; }
+}
+.h4, .parrafo {
+    font-weight: bold;
+}
+.sinnegrita {
+    font-weight: normal;
+}
